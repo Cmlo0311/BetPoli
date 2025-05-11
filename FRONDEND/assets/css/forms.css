@@ -1,0 +1,67 @@
+/* Paleta de colores oscuros adaptada:
+  #09152B (fondo principal oscuro)
+  #082751 (fondo secundario/acento oscuro)
+  #063977 (énfasis medio)
+  #76D5FE (texto claro principal)
+  #B1E7FF (texto claro secundario/bordes)
+  #00B0FC (acento brillante)
+  #FF8C00 (naranja oscuro, para botones)
+  #FFA500 (naranja medio, para hover o destacados)
+  #FFC966 (naranja claro, para fondos o bordes suaves)
+
+*/
+
+/* Estilos para el formulario (sin cambios en su posición) */
+form {
+  background-color: #082751; /* Fondo oscuro para el formulario */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada para el formulario oscuro */
+  width: 90%;
+  max-width: 400px;
+  margin-top: 30px; /* Añadimos un margen superior para separarlo del encabezado */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid #063977;
+}
+
+form h1 {
+  color: #ff8c00;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"] {
+  padding: 12px;
+  border: none; /* Borde de los campos de entrada */
+  border-radius: 4px;
+  font-size: 1em;
+  background-color: #09152b; /* Fondo de los campos de entrada un poco más oscuro */
+  color: #063977; /* Texto dentro de los campos de entrada */
+}
+
+form input:focus {
+  outline: none;
+  border-color: #00b0fc; /* Acento brillante al enfocar */
+  box-shadow: 0 0 5px rgba(0, 176, 252, 0.5);
+}
+
+form button[type="submit"] {
+  background-color: #035cc2; /* Un azul más claro para el botón en tema oscuro */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form#userForm button[type="submit"]:hover {
+  background-color: #00b0fc; /* Acento brillante al pasar el ratón */
+}

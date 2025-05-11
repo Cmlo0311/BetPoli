@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/FRONDEND/assets/css/body.css" />
+    <link rel="stylesheet" href="/FRONDEND/assets/css/header.css" />
+    <link rel="stylesheet" href="/FRONDEND/assets/css/forms.css" />
+  </head>
+  <body>
+    <header id="mi-header"></header>
+
+    <form id="userForm">
+      <h1>Crear Usuario</h1>
+      <input type="text" name="NombreUsuario" placeholder="Usuario" required />
+      <input type="text" name="Nombre" placeholder="Nombre" required />
+      <input type="text" name="Apellido" placeholder="Apellido" required />
+
+      <input
+        type="number"
+        name="Identificacion"
+        placeholder="Identificacion"
+        required
+      />
+
+      <input
+        type="email"
+        name="CorreoElectronico"
+        placeholder="Email"
+        required
+      />
+      <input
+        type="password"
+        name="Contrasena"
+        placeholder="Contrasena"
+        required
+      />
+      <input type="date" name="FechaNacimiento" required />
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <script src="/FRONDEND/js/postUsuario.js"></script>
+  </body>
+</html>

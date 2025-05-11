@@ -1,0 +1,35 @@
+/* Paleta de colores oscuros adaptada:
+  #09152B (fondo principal oscuro)
+  #082751 (fondo secundario/acento oscuro)
+  #063977 (énfasis medio)
+  #76D5FE (texto claro principal)
+  #B1E7FF (texto claro secundario/bordes)
+  #00B0FC (acento brillante)
+  #FF8C00 (naranja oscuro, para botones)
+  #FFA500 (naranja medio, para hover o destacados)
+  #FFC966 (naranja claro, para fondos o bordes suaves)
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap");
+body {
+  font-family: "Comic Relief", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #09152b;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+p {
+  color: #ff8c00;
+  text-align: center;
+  margin-bottom: 20px;
+}
